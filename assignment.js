@@ -28,7 +28,7 @@ function brickCalculator(params) {
 
 // tinyFriend
 function tinyFriend(friendsName) {
-    var shortLength = friendsName[0];
+    var shortLength = friendsName[0].length;
     for (var i = 0; i < friendsName.length; i++) {
         var nameLength = friendsName[i].length;
         if (nameLength < shortLength) {
@@ -38,5 +38,5 @@ function tinyFriend(friendsName) {
     return shortLength;
 }
 
-let friendNameList = tinyFriend(["kamal", "jam", "kuddus"]);
+let friendNameList = tinyFriend(["kama", "k", "jm", "kuddus"]);
 console.log(friendNameList);
