@@ -22,5 +22,21 @@ console.log(woodRequirement);
 
 
 // brickCalculator
+function brickCalculator(params) {
+    
+}
 
 // tinyFriend
+function tinyFriend(friendsName) {
+    var shortLength = friendsName[0];
+    for (var i = 0; i < friendsName.length; i++) {
+        var nameLength = friendsName[i];
+        if (nameLength < shortLenght) {
+            shortLength = nameLength;
+        }
+    }
+    return shortLength;
+}
+
+let friendNameList = tinyFriend(["kamal", "jam", "kuddus"]);
+console.log(friendNameList);
