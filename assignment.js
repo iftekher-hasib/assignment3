@@ -30,8 +30,8 @@ function brickCalculator(params) {
 function tinyFriend(friendsName) {
     var shortLength = friendsName[0];
     for (var i = 0; i < friendsName.length; i++) {
-        var nameLength = friendsName[i];
-        if (nameLength < shortLenght) {
+        var nameLength = friendsName[i].length;
+        if (nameLength < shortLength) {
             shortLength = nameLength;
         }
     }
