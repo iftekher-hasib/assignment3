@@ -22,9 +22,22 @@ console.log(woodRequirement);
 
 
 // brickCalculator
-function brickCalculator(params) {
-    
+function brickCalculator(numberOfFloor) {
+    if (numberOfFloor<11) {
+        var height = 15 * numberOfFloor
+    }
+    else if (numberOfFloor<21) {
+        var height = 150 + (numberOfFloor - 10) * 12
+    }
+    else {
+        var height = 270 + (numberOfFloor - 20) * 10
+    }
+    var brickCount = height * 1000
+    return brickCount;
 }
+
+var requiredBrick = brickCalculator(21);
+console.log(requiredBrick);
 
 // tinyFriend
 function tinyFriend(friendsName) {
@@ -38,5 +51,5 @@ function tinyFriend(friendsName) {
     return shortLength;
 }
 
-let friendNameList = tinyFriend(["kama", "k", "jm", "kuddus"]);
+let friendNameList = tinyFriend(["kja", "ll", "jllkm", "hhhha"]);
 console.log(friendNameList);
